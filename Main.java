@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
- class bank {
+ class bank  {
 
     public static void main(String[] args) {
         int choice=0 ;
