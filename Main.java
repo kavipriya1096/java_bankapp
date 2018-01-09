@@ -18,7 +18,6 @@ import java.util.Scanner;
             System.out.println("enter your choice");
             choice = sc.nextInt();
             if (choice == 1) {
-
                 System.out.println("enter your deposit ");
                 a = sc.nextDouble();
                 amount += a;
