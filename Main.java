@@ -1,7 +1,8 @@
 package com.company;
 import java.util.Scanner;
 
- class bank  {
+ class bank
+ {
 
     public static void main(String[] args) {
         int choice=0 ;
@@ -16,27 +17,25 @@ import java.util.Scanner;
             System.out.println("3.exit");
             System.out.println("enter your choice");
             choice = sc.nextInt();
-            switch (choice) {
-                case 1:
-                    System.out.println("enter your deposit ");
-                    a = sc.nextDouble();
-                    amount += a;
-                    System.out.println("the current amount is="+amount);
+            if (choice == 1) {
 
-                    break;
-                case 2:
-                    System.out.println("the current amount is="+amount);
-                    System.out.println("enter the withdrawl amount");
-                    b=sc.nextDouble();
-                    amount=amount-b;
-                    System.out.println ("balance is= "+amount);
-                    break;
-                case 3:
-                    break;
-            }
+                System.out.println("enter your deposit ");
+                a = sc.nextDouble();
+                amount += a;
+                System.out.println("the current amount is=" + amount);
+            } else if (choice == 2) {
+                System.out.println("the current amount is=" + amount);
+                System.out.println("enter the withdrawl amount");
+                b = sc.nextDouble();
+                amount = amount - b;
+                System.out.println("balance is= " + amount);
+            } else
+                System.out.println("exit");
+
+        }
         }
     }
-}
+
 
 
 
